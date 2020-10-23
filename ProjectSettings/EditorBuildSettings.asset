@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: be8c0c7dd6c490d4180e94eb648c6e82
+  - enabled: 1
+    path: Assets/Scenes/Refraction_AR.unity
+    guid: 0a72404d8af0d304282758e3184fd460
   m_configObjects: {}
