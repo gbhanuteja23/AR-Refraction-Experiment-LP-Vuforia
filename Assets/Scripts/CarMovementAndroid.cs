@@ -42,7 +42,7 @@ public class CarMovementAndroid : MonoBehaviour
 
         else
         {
-            audioSource.Stop();   // To stop playing rocketSound
+            audioSource.Stop();   
         }
 
         rigidBody.AddRelativeForce(new Vector3(0,0,1) * forceval);
@@ -57,7 +57,7 @@ public class CarMovementAndroid : MonoBehaviour
 
         else
         {
-            audioSource.Stop();   // To stop playing rocketSound
+            audioSource.Stop();   
         }
 
         rigidBody.AddRelativeForce( new Vector3(0,0,-1) * forceval);
