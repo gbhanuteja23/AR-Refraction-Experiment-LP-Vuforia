@@ -79,14 +79,18 @@ public class CarMovementAndroid : MonoBehaviour
 
     public void MoveForward()
     {
-
-        rigidBody.AddRelativeForce(new Vector3(0, 0, 1) * forceval);
+        transform.Translate(new Vector3(0, 0, 1) * 5, Space.Self);
+        
+        //rigidBody.AddRelativeForce(new Vector3(0, 0, 1) * forceval);
+        //rigidBody.AddForce(new Vector3(0, 0, 1) * forceval, ForceMode.Acceleration);
     }
 
     public void Movebackward()
     {
-
-        rigidBody.AddRelativeForce(new Vector3(0, 0, -1) * forceval);
+        transform.Translate(new Vector3(0, 0, -1) * 5, Space.Self);
+        
+        //rigidBody.AddRelativeForce(new Vector3(0, 0, -1) * forceval);
+        //rigidBody.AddForce(new Vector3(0, 0, -1) * forceval, ForceMode.Acceleration);
     }
 
     public void RotateClockwise_x()
@@ -153,9 +157,9 @@ public class CarMovementAndroid : MonoBehaviour
 
     public void ResetPosCar()
     {
-        this.gameObject.transform.position = new Vector3(801.478f, 48.353f, 109.761f);
+        this.gameObject.transform.position = new Vector3(0.02189f, 0.07914f, -0.42794f);
 
-        this.gameObject.transform.rotation = Quaternion.Euler(79.748f, -180.90f, -0.625f);
+        this.gameObject.transform.rotation = Quaternion.Euler(-0.007f, -369.591f, -0.625f);
 
         rigidBody.velocity = new Vector3(0,0,0);
     }
